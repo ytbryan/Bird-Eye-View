@@ -1,3 +1,9 @@
+1. switch on the charts [DONE]
+2. add controller_name and action_name [DONE]
+- fix the font awesome 
+- add the chart () [DONE]
+- add coffeescript (init.coffee + global.coffee) [DONE]
+
 == README
 
 This README would normally document whatever steps are necessary to get the
