@@ -14,10 +14,22 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-left">
-				<li><a href="<%= %>">Dashboard</a></li>
-				<li><a href="<%= %>">Every Visitors</a></li>
-				<li><a href="<%= %>">Email Us</a></li>
-				<li><a href="<%=  %>">Settings</a></li>
+				<li role="presentation" class="active"><a href="<%= %>">Dashboard</a></li>
+				<li role="presentation"><a href="<%= %>">Every Visitors</a></li>
+				<li role="presentation"><a href="<%= %>">Give us your feedback</a></li>
+				<li role="presentation"><a href="<%=  %>">Settings</a></li>
+				<li role="presentation" class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+						ytbryan.com <span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">ytbryan.com (Default)</a></li>
+						<li><a href="#">Birdeyeview.net</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Add a new website</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>

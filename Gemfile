@@ -59,7 +59,6 @@ group :development, :test do
   gem 'rails_best_practices'
   gem 'deadweight'
   gem 'colored'
-  # gem 'rubycritic'
   gem 'pry-rails'
   gem 'reek'
 end
