@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
-  resources :dashboards
-  resources :accounts
-  resources :users
-
+  resources :accounts, :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'dashboards#index'
+  root 'dashboards#main'
+
+  resources :dashboards do
+    get '/login' => 'dashboards#login'
+    get '/settings' => 'dashboards#settings'
+    get '/visitors' => 'dashboards#visitors'
+  end
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
