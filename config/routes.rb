@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
-  root 'dashboards#main'
-  
-  resources :accounts, :users
+  # root 'dashboards#main'
+  root 'front_pages#main'
+
+  get '/pricing' => 'front_pages#pricing'
+  resources :accounts, :users, :front_pages
   resources :dashboards do
     get '/login' => 'dashboards#login'
     get '/settings' => 'dashboards#settings'
