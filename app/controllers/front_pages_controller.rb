@@ -1,6 +1,6 @@
 class FrontPagesController < ApplicationController
+  # before_action :authenticate, only: [:reveal_profile, :show_account_info]
   before_action :set_front_page, only: [:show, :edit, :update, :destroy]
-
 
   def main
     @user = User.new
@@ -66,6 +66,10 @@ class FrontPagesController < ApplicationController
   end
 
   private
+    # def authenticate
+    #     is the user in the database
+    # end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_front_page
       @front_page = FrontPage.find(params[:id])
