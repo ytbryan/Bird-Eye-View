@@ -1,3 +1,78 @@
 // Place all the styles related to the FrontPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+
+
+
+.link:visited{
+  color:#0078f1;
+  background: white;
+  text-decoration: underline;
+}
+.link:link {
+  color:#0078f1;
+  background: white;
+  text-decoration: underline;
+}
+.link:hover {
+  color:blue;
+  background: white;
+  text-decoration: underline;
+}
+
+@media (min-width: 480px) and (max-width: 959px) {
+  .value {
+    display:inline;
+  }
+
+  .value2 {
+    display: none;
+  }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 960px) and (max-width: 1199px) {
+  .value {
+    display: none;
+  }
+
+  .value2 {
+    display: inline;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .value {
+      display:none;
+    }
+
+    .value2 {
+      display: inline;
+    }
+}
+
+
+.border {
+  // height: 100%;
+  padding: 30px;
+  border: 1px solid black;
+  // border: 30px solid black;
+}
+
+.left_side {
+  float:left;
+}
+
+.right_side {
+  margin-top: 30px;
+  float:right;
+}
+
+.top_panel {
+  width: 100%;
+  height: 80px;
+  border: 1px solid red;
+}

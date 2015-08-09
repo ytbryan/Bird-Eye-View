@@ -1,12 +1,34 @@
-<h1>This is the main page</h1>
+<%= title "Bird Eye View of Your Website" %>
 
-<p>
-  A line of words to describe bird eye view.
-</p>
+<div class="border">
 
 
-<h1>Sign up form here</h1>
+  <div class="top_panel">
+    <div class="left_side">
+      <h1>Bird Eye View</h1>
+    </div>
 
-<%= render "sign_up_form" %>
+    <div class="right_side">
+      <%= link_to "Pricing", "", class: "value link" %>
+      <%= link_to "View pricing and plans", "", class: "value2 link" %>
 
-<h1>A button to demo Bird Eye View </h1>
+      <%= link_to "Stories", "", class: "value" %>
+      <%= link_to "Success Stories", "", class: "value2" %>
+
+      <%= link_to "Help", "", class: "value" %>
+      <%= link_to "Support", "", class: "value2" %>
+
+      <button type="button" name="button" class="value">Log in</button>
+      <button type="button" name="button" class="value2">Sign in to your existing account</button>
+    </div>
+  </div>
+
+  <p>
+    View Data, Insights and Overview of your web site, web app and web businesses.
+  </p>
+
+  <%= render "sign_up_form" %>
+
+  <%= link_to "Try Free Trial for 30 Days, It's on us.", "", class: "btn btn-xs btn-default" %>
+
+</div>
