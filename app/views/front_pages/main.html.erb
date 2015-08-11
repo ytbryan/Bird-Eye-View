@@ -2,21 +2,21 @@
 
 <div class="border">
 
-
   <div class="top_panel">
     <div class="left_side">
       <h1>Bird Eye View</h1>
     </div>
 
     <div class="right_side">
-      <%= link_to "Pricing", "", class: "value link" %>
-      <%= link_to "View pricing and plans", "", class: "value2 link" %>
 
-      <%= link_to "Stories", "", class: "value" %>
-      <%= link_to "Success Stories", "", class: "value2" %>
+      <%= link_to "Pricing", "/pricing", class: "value link" %>
+      <%= link_to "View pricing and plans", "/pricing", class: "value2 link" %>
 
-      <%= link_to "Help", "", class: "value" %>
-      <%= link_to "Support", "", class: "value2" %>
+      <%= link_to "Stories", "", class: "value link" %>
+      <%= link_to "Success Stories", "/", class: "value2 link" %>
+
+      <%= link_to "Help", "/support", class: "value link" %>
+      <%= link_to "Support", "/support", class: "value2 link" %>
 
       <button type="button" name="button" class="value">Log in</button>
       <button type="button" name="button" class="value2">Sign in to your existing account</button>
@@ -27,8 +27,14 @@
     View Data, Insights and Overview of your web site, web app and web businesses.
   </p>
 
-  <%= render "sign_up_form" %>
+  <div class="value">
+    <%= render "sign_up_form_for_mobile" %>
+  </div>
 
-  <%= link_to "Try Free Trial for 30 Days, It's on us.", "", class: "btn btn-xs btn-default" %>
+  <div class="value2">
+    <%= render "sign_up_form" %>
+  </div>
+
+  <%= link_to "Try Free Trial for 30 Days - It's on us.", "/signup30daysfree", class: "link" %>
 
 </div>

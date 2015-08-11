@@ -1,21 +1,36 @@
 // Place all the styles related to the FrontPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-//
 
+.bigger_signup_button {
+  font-size:20px;
+  width: 100px;
+  height: 50px;
+}
 
+.bigger_signup {
+  font-size:25px;
+  width: 300px;
+  height: 50px;
+  padding: 8px;
+}
 
-.link:visited{
+.link:visited {
+  padding: 2px;
   color:#0078f1;
   background: white;
   text-decoration: underline;
 }
+
 .link:link {
+  padding: 2px;
   color:#0078f1;
   background: white;
   text-decoration: underline;
 }
+
 .link:hover {
+  padding: 2px;
   color:blue;
   background: white;
   text-decoration: underline;
@@ -25,14 +40,11 @@
   .value {
     display:inline;
   }
-
   .value2 {
     display: none;
   }
-
 }
 
-/* Medium devices (desktops, 992px and up) */
 @media (min-width: 960px) and (max-width: 1199px) {
   .value {
     display: none;

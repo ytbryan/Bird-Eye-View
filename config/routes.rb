@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
-  # root 'dashboards#main'
   root 'front_pages#main'
 
+  #CUSTOM URL
   get '/pricing' => 'front_pages#pricing'
+  get '/support' => 'front_pages#support'
+  get '/signin' => 'front_pages#signin'
+  get '/signup' => 'front_pages#signup'
+
+  #Resources
   resources :accounts, :users, :front_pages
   resources :dashboards do
     get '/login' => 'dashboards#login'
