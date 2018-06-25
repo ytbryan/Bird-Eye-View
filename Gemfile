@@ -12,7 +12,7 @@ gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '~> 2.7.2' # This change was made via Snyk to fix a vulnerability
 # Use CoffeeScript for .coffee assets and views
@@ -40,13 +40,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
   gem 'spring'
   gem 'quiet_assets', '~> 1.1.0' # This change was made via Snyk to fix a vulnerability
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-coffeescript'
-  gem 'rename', '~> 1.0.2' # This change was made via Snyk to fix a vulnerability
+  gem 'rename', '~> 1.0.5' # This change was made via Snyk to fix a vulnerability
   gem 'rubocop'
   gem 'minitest-rails'
   gem 'thin'
