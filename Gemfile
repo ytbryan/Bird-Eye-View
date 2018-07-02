@@ -43,9 +43,9 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'quiet_assets', '~> 1.1.0' # This change was made via Snyk to fix a vulnerability
-  gem 'guard'
-  gem 'guard-livereload'
-  gem 'guard-coffeescript'
+  gem 'guard', '>= 2.14.1'
+  gem 'guard-livereload', '>= 2.5.2'
+  gem 'guard-coffeescript', '>= 2.0.1'
   gem 'rename', '~> 1.0.2' # This change was made via Snyk to fix a vulnerability
   gem 'rubocop'
   gem 'minitest-rails'
