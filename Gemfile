@@ -3,25 +3,25 @@ source 'https://rubygems.org'
 gem 'mina'
 gem 'foreman'
 gem 'puma'
-gem 'devise', '~> 3.5.4' # This change was made via Snyk to fix a vulnerability
+gem 'devise', '~> 3.5.10' # This change was made via Snyk to fix a vulnerability
 gem 'gon', '~> 5.2.3' # This change was made via Snyk to fix a vulnerability
-gem 'sidekiq'
+gem 'sidekiq', '>= 4.2.9'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '~> 2.7.2' # This change was made via Snyk to fix a vulnerability
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.2'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '~> 2.5.3' # This change was made via Snyk to fix a vulnerability
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -40,21 +40,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '~> 2.3', '>= 2.3.0'
   gem 'spring'
   gem 'quiet_assets', '~> 1.1.0' # This change was made via Snyk to fix a vulnerability
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-coffeescript'
-  gem 'rename', '~> 1.0.2' # This change was made via Snyk to fix a vulnerability
+  gem 'rename', '~> 1.0.5' # This change was made via Snyk to fix a vulnerability
   gem 'rubocop'
-  gem 'minitest-rails'
-  gem 'thin'
-  gem 'better_errors'
-  gem 'lograge', '~> 0.3.4' # This change was made via Snyk to fix a vulnerability
+  gem 'minitest-rails', '>= 2.2.1'
+  gem 'thin', '>= 1.7.0'
+  gem 'better_errors', '>= 2.1.1'
+  gem 'lograge', '~> 0.3.6' # This change was made via Snyk to fix a vulnerability
   gem 'rails-erd'
-  gem 'rails-dev-boost'
-  gem 'rack-mini-profiler', require: false
+  gem 'rails-dev-boost', '>= 0.3.0'
+  gem 'rack-mini-profiler', '>= 0.10.1', require: false
   gem 'traceroute', '~> 0.5.0' # This change was made via Snyk to fix a vulnerability
   gem 'brakeman'
   gem 'rails_best_practices'
