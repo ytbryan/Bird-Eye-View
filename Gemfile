@@ -8,7 +8,7 @@ gem 'gon', '~> 5.2.3' # This change was made via Snyk to fix a vulnerability
 gem 'sidekiq'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
+gem 'rails', '~> 4.2.11.0' # This change was made via Snyk to fix a vulnerability
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -46,7 +46,7 @@ group :development, :test do
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-coffeescript'
-  gem 'rename', '~> 1.0.2' # This change was made via Snyk to fix a vulnerability
+  gem 'rename', '~> 1.0.5' # This change was made via Snyk to fix a vulnerability
   gem 'rubocop'
   gem 'minitest-rails'
   gem 'thin'
